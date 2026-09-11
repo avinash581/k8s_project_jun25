@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Maven Build
-        run: mvn install
+        run: mvn -f app/pom.xml clean install
 
 
   Testing:
